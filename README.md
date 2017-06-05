@@ -1,7 +1,8 @@
 # start-template
 Template for fast start
 Need to install less, gulp and gulp modules
-    less = require('gulp-less'),
-    cssmin = require('gulp-cssmin'),
-    plumber = require('gulp-plumber'),
-    rename = require('gulp-rename');
+npm i:
+1. gulp-less
+2. gulp-rename
+3. gulp-cssmin
+4. gulp-plumber
