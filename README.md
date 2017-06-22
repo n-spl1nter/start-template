@@ -6,3 +6,4 @@ npm i:
 2. gulp-rename
 3. gulp-cssmin
 4. gulp-plumber
+5. gulp-autoprefixer
