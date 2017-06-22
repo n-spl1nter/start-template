@@ -7,3 +7,5 @@ npm i:
 3. gulp-cssmin
 4. gulp-plumber
 5. gulp-autoprefixer
+6. gulp-uglify
+7. pump
