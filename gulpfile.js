@@ -2,12 +2,15 @@ var gulp = require('gulp'),
     less = require('gulp-less'),
     cssmin = require('gulp-cssmin'),
     plumber = require('gulp-plumber'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', function(){
     gulp.watch('build/*.less', function(e){
         gulp.src(e.path)
             .pipe(less())
+            .pipe(gulp.dest('./f/css'))
+            .pipe(autoprefixer())
             .pipe(gulp.dest('./f/css'))
             .pipe(cssmin())
             .pipe(rename({suffix: '.min'}))
