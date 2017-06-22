@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="/f/css/styles.min.css">
+    <link rel="stylesheet" href="/build/css/styles.min.css">
 </head>
 <body>
     <h1>Index</h1>
     
-    <script src="/f/js/jquery.min.js"></script>
+    <script src="/build/js/jquery.min.js"></script>
+    <script src="/build/js/main.min.js"></script>
 </body>
 </html>
