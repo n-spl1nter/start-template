@@ -1,0 +1,20 @@
+{
+  "name": "gd-markup",
+  "description": "Markup for GD",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alexey Rodin <alexeyrodin@live.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

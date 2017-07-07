@@ -1,7 +1,0 @@
-@import (inline) './reset.css';
-
-.transition (@value1,@value2:X,...){
-    @value: ~`"@{arguments}".replace(/[\[\]]|\,\sX/g, '')`; 
-    -webkit-transition: @value; 
-    transition: @value; 
-}
