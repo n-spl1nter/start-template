@@ -50,7 +50,9 @@ gulp.task('sprite:build', function (cb) {
     var spriteData = gulp.src(path.src.sprite).pipe(spritesmith({
         imgName: 'sprite.png',
         cssName: 'sprite.less',
+        retinaSrcFilter: '*-2x.png',
         imgPath: '../img/sprite/sprite.png',
+        retinaImgName: 'sprite-2x.png',
     }));
     var imgStream = spriteData.img
     .pipe(buffer())
@@ -117,8 +119,8 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build',
-    'sprite:build'
+    'sprite:build',
+    'image:build'
 ]);
 
 
@@ -132,14 +134,14 @@ gulp.task('watch', function(){
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
     });
+    watch([path.watch.sprite], function(event, cb) {
+        gulp.start('sprite:build');
+    });
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
     });
     watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts:build');
-    });
-    watch([path.watch.sprite], function(event, cb) {
-        gulp.start('sprite:build');
     });
 });
 
